@@ -1,0 +1,2 @@
+class StudentInfo < UserInfo
+end
