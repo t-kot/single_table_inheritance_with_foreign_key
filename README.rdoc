@@ -1,10 +1,15 @@
 teachers, students => それぞれスキーマが大きく異なるが、ユーザとしてまとめて扱いたいケースが多々ある
+
 user_infos => teachersとstudentsの共通部分
 
 teacher.info #=> #<TeacherInfo>
+
 student.info #=> #<StudentInfo>
+
 UserInfo.all #=> [#<StudentInfo>, #<TeacherInfo>, ...]
+
 student_info.detail #=> #<Student>
+
 teacher_info.detail #=> #<Teacher>
 
 StudentとTeacherに対してポリモーフィック関連で参照するようなケースはすべてUserInfoを参照すればよくなるし、
